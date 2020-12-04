@@ -1,0 +1,1902 @@
+#: import WipeTransition kivy.uix.screenmanager.WipeTransition
+
+ScreenManagement:
+    transition: WipeTransition(duration = 0.3)
+
+    Window1:
+    Window2:
+    
+    Main1:
+    Main2:
+    Main3:
+    Main4:
+
+    Main1_Task1:
+    Main1_Task2:
+    Main1_Task3:
+    Main1_Task4:
+    Main1_Task5:
+    Main1_Task6:
+
+    Main2_Task1:
+    Main2_Task2:
+    Main2_Task3:
+    Main2_Task4:
+    Main2_Task5:
+    Main2_Task6:
+    Main2_Task7:
+    Main2_Task8:
+
+    Main3_Task1:
+    Main3_Task2:
+
+    Main4_Task1:
+    Main4_Task2:
+    Main4_Task3:
+    Main4_Task4:
+    Main4_Task5:
+    Main4_Task6:
+    Main4_Task7:
+    Main4_Task8:
+
+#-----------------------------------------------------------------
+
+<Window1>
+    name: "Enter"
+
+    Image:
+        source: "Window1.png"
+        size_hint_x: 0.15
+        pos: root.width * 0.425, -root.height * 0.01
+
+    Label:
+        text: "Drone Manager v1.0"
+        pos: -root.width * 0.0, -root.height * 0.14
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Created by-"
+        pos: -root.width * 0.0, -root.height * 0.185
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Abhishek A. Jadhav"
+        pos: -root.width * 0.0, -root.height * 0.21
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "2020"
+        pos: -root.width * 0.0, -root.height * 0.255
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Report bugs at- abhishekajadhavb4@gmail.com"
+        pos: -root.width * 0.0, -root.height * 0.3
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : (root.width / 2) - (root.width * 0.1 / 2), root.height * 0.05
+        size_hint: 0.1, 0.05
+        text: "Enter"
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Home"
+
+
+<Window2>
+    name: "Home"
+
+    Label:
+        text: "Drone Manager"
+        pos: -root.width * 0.0, root.height * 0.4
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Image:
+        source: "Window2.png"
+        size_hint_x: 0.3
+        pos: root.width * 0.37, root.height * 0.08
+
+    Label:
+        text: "    This tool provides a step by step guide\nfrom preparation phases to actual flight testing"
+        pos: -root.width * 0.0, -root.height * 0.2
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "->"
+        pos: -root.width * 0.18, -root.height * 0.43
+        font_size: root.height * 0.045
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "->"
+        pos: root.width * 0.0, -root.height * 0.43
+        font_size: root.height * 0.045
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "->"
+        pos: root.width * 0.18, -root.height * 0.43
+        font_size: root.height * 0.045
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Preparation Phase I"
+        pos: -root.width * 0.27, -root.height * 0.38
+        font_size: root.height * 0.0265
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : (1.25 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Start"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "On Ground Test"
+        pos: -root.width * 0.09, -root.height * 0.38
+        font_size: root.height * 0.0265
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : (2.25 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Start"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Preparation Phase II"
+        pos: root.width * 0.091, -root.height * 0.38
+        font_size: root.height * 0.0265
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : (3.25 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Start"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase2"
+
+    Label:
+        text: "In Air Test"
+        pos: root.width * 0.2725, -root.height * 0.38
+        font_size: root.height * 0.0265
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : (4.25 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Start"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.88
+        size_hint: 0.05, 0.03
+        text: "About"
+        font_size: root.height * 0.015
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Enter"
+
+#-----------------------------------------------------------------
+
+<Main1>
+    name: "PrepPhase1"
+
+    Label:
+        text: "Preparation Phase I:"
+        pos: -root.width * 0.38, root.height * 0.41
+        font_size: root.height * 0.033
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------------------------\n|                                                                                                                                        |\n|     Complete the following tasks before proceeding to actual ground test. This will give better understanding of handling instruments  |\n|                                                                                                                                        |\n| and make it easier to communicate with various hardwares and sensors.                                                                  | \n|                                                                                                                                        |\n------------------------------------------------------------------------------------------------------------------------------------------"
+        pos: -root.width * 0, root.height * 0.245
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Task 1: LED toggle using arduino. \n\nTask 2: LED brightness using potentiometer. \n\nTask 3: LED toggle using python. \n\nTask 4: LED toggle using sound sensor. \n\nTask 5: Motor speed change using potentiometer. \n\nTask 6: Motor speed change using ultrasonic sensor."
+        pos: -root.width * 0.295, -root.height * 0.047
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Home"
+
+    Button:
+        pos : (1.5 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 1"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T1"
+
+    Button:
+        pos : (2 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 2"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T2"
+
+    Button:
+        pos : (2.5 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 3"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T3"
+
+    Button:
+        pos : (3 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 4"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T4"
+
+    Button:
+        pos : (3.5 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 5"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T5"
+
+    Button:
+        pos : (4 * root.width / 5.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 6"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M1T6"
+
+
+<Main2>
+    name: "OnGround"
+
+    Label:
+        text: "On Ground Test:"
+        pos: -root.width * 0.41, root.height * 0.41
+        font_size: root.height * 0.033
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "--------------------------------------------------------------------------------------------------------------------------------------------\n|                                                                                                                                          |\n|     Completing the following tasks will give understanding of motion of a drone in 2-D axis. It will help to understand PID tuning for   |\n|                                                                                                                                          |\n| easy case preparing for actual in air testing.                                                                                           |\n|                                                                                                                                          |\n--------------------------------------------------------------------------------------------------------------------------------------------"
+        pos: -root.width * 0, root.height * 0.245
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Task 1: Align to horizontal when disturbed manually. \n\nTask 2: Allign according to potentiometer input. \n\nTask 3: Align according to ultrasonic sensor input. \n\nTask 4: Align using sound sensor input. \n\nTask 5: Align using degree input from python. \n\nTask 6: Align using patterns given in python. \n\nTask 7: Align using inputs from kivy. \n\nTask 8: Align using OpenCV."
+        pos: -root.width * 0.29, -root.height * 0.1
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Home"
+
+    Button:
+        pos : (1.25 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 1"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T1"
+
+    Button:
+        pos : (1.96 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 2"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T2"
+
+    Button:
+        pos : (2.67 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 3"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T3"
+
+    Button:
+        pos : (3.38 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 4"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T4"
+
+    Button:
+        pos : (4.09 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 5"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T5"
+
+    Button:
+        pos : (4.8 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 6"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T6"
+
+    Button:
+        pos : (5.51 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 7"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T7"
+
+    Button:
+        pos : (6.22 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 8"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M2T8"
+
+
+<Main3>
+    name: "PrepPhase2"
+
+    Label:
+        text: "Preparation Phase II:"
+        pos: -root.width * 0.38, root.height * 0.41
+        font_size: root.height * 0.033
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------------------------\n|                                                                                                                                        |\n|      Complete the following tasks before proceeding to the actual in air test. This will give better understanding of controlling      |\n|                                                                                                                                        |\n| instruments over bluetooth without an actual wire connection.                                                                          | \n|                                                                                                                                        |\n------------------------------------------------------------------------------------------------------------------------------------------"
+        pos: -root.width * 0, root.height * 0.245
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Task 1: Basic framework for PID in 3-D. \n\nTask 2: Control LED over bluetooth through python."
+        pos: -root.width * 0.295, root.height * 0.05
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Home"
+
+    Button:
+        pos : (0.905 * root.width / 2) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 1"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M3T1"
+
+    Button:
+        pos : (1.095 * root.width / 2) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 2"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M3T2"
+
+
+<Main4>
+    name: "InAir"
+
+    Label:
+        text: "In Air Test:"
+        pos: -root.width * 0.425, root.height * 0.41
+        font_size: root.height * 0.033
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------------------------\n|                                                                                                                                        |\n|      Completing these tasks will complete the aim of this project. A fully working drone with remote connection, auto taking off and   |\n|                                                                                                                                        |\n| landing system, python powered and easily maneuverable drone will be manufactured at the end of these tasks.                           | \n|                                                                                                                                        |\n------------------------------------------------------------------------------------------------------------------------------------------"
+        pos: -root.width * 0, root.height * 0.245
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Task 1: Hover at given altitude using ultrasonic sensor. \n\nTask 2: Hover at manually adjusted altitude. \n\nTask 3: Autoland using sound sensor. \n\nTask 4: Set altitude according to python input. \n\nTask 5: Move in 2/3-D using python input. \n\nTask 6: Move using python patterns. \n\nTask 7: Move using Open CV through laptop camera. \n\nTask 8: Move using OpenCV through onboard camera."
+        pos: -root.width * 0.27, -root.height * 0.1
+        font_size: root.height * 0.022
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "Home"
+
+    Button:
+        pos : (1.25 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 1"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T1"
+
+    Button:
+        pos : (1.96 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 2"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T2"
+
+    Button:
+        pos : (2.67 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 3"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T3"
+
+    Button:
+        pos : (3.38 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 4"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T4"
+
+    Button:
+        pos : (4.09 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 5"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T5"
+
+    Button:
+        pos : (4.8 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 6"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T6"
+
+    Button:
+        pos : (5.51 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 7"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T7"
+
+    Button:
+        pos : (6.22 * root.width / 7.5) - (root.width * 0.06 / 2), root.height * 0.05
+        size_hint: 0.06, 0.04
+        text: "Task 8"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "M4T8"
+
+#-----------------------------------------------------------------
+
+<Main1_Task1>
+    name: "M1T1"
+
+    Label:
+        text: "Task 1: LED toggle using arduino"
+        pos: -root.width * 0.335, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Simple 'hello world' program in ardiuno to test the board and to get started"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main1_Task2>
+    name: "M1T2"
+
+    Label:
+        text: "Task 2: LED brightness using potentiometer"
+        pos: -root.width * 0.28, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Ardiuno program to control brightness of potentiometer using hardware (potentiometer)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main1_Task3>
+    name: "M1T3"
+
+    Label:
+        text: "Task 3: LED toggle using python"
+        pos: -root.width * 0.345, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Basic python script which accesses the Serial Monitor to send inputs"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pythonCopy()
+
+
+<Main1_Task4>
+    name: "M1T4"
+
+    Label:
+        text: "Task 4: LED toggle using sound sensor"
+        pos: -root.width * 0.3125, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Ardiuno program to toggle LED using hardware (sound sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main1_Task5>
+    name: "M1T5"
+
+    Label:
+        text: "Task 5: Motor speed change using potentiometer"
+        pos: -root.width * 0.27, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Set speed of motor using hardware (potentiometer)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main1_Task6>
+    name: "M1T6"
+
+    Label:
+        text: "Task 6: Motor speed change using ultrasonic sensor"
+        pos: -root.width * 0.25, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Set speed of motor using hardware (ultrasonic sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase1"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+#-----------------------------------------------------------------
+
+<Main2_Task1>
+    name: "M2T1"
+
+    Label:
+        text: "Task 1: Align to horizontal when disturbed manually"
+        pos: -root.width * 0.245, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Returns to original horizontal position when disturbed"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main2_Task2>
+    name: "M2T2"
+
+    Label:
+        text: "Task 2: Align according to potentiometer input"
+        pos: -root.width * 0.27, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Holds the angle specified by hardware (potentiometer)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main2_Task3>
+    name: "M2T3"
+
+    Label:
+        text: "Task 3: Align according to ultrasonic sensor input"
+        pos: -root.width * 0.25, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Holds the angle specified by hardware (ultrasonic sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main2_Task4>
+    name: "M2T4"
+
+    Label:
+        text: "Task 4: Align using sound sensor input"
+        pos: -root.width * 0.31, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Toggles between extreme and middle position through hardware (sound sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main2_Task5>
+    name: "M2T5"
+
+    Label:
+        text: "Task 5: Align using degree input from python"
+        pos: -root.width * 0.28, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Sets angle according to python inputs"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pythonCopy()
+
+
+<Main2_Task6>
+    name: "M2T6"
+
+    Label:
+        text: "Task 6: Align using patterns given in python"
+        pos: -root.width * 0.28, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Follows the patterns scripted in python"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pythonCopy()
+
+    Button:
+        pos : root.width * 0.418, root.height * 0.5
+        size_hint: 0.07, 0.05
+        text: "Pattern 1"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pattern1()
+
+    Button:
+        pos : root.width * 0.518, root.height * 0.5
+        size_hint: 0.07, 0.05
+        text: "Pattern 2"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pattern2()
+
+    Button:
+        pos : root.width * 0.475, root.height * 0.4
+        size_hint: 0.06, 0.045
+        text: "Stop"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.stop()
+
+
+<Main2_Task7>
+    name: "M2T7"
+
+    Label:
+        text: "Task 7: Align using inputs from kivy"
+        pos: -root.width * 0.315, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Sets angle according to inputs from python module (kivy)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+        on_release: root.reset()
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pythonCopy()
+
+    Button:
+        pos: root.width * 0.525, root.height * 0.46
+        size_hint: 0.05, 0.04
+        text: "Set"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.writeAngle()
+
+    TextInput:
+        id: writeAngle
+        hint_text: "-40 to 40"
+        font_size: root.height * 0.02
+        pos: root.width * 0.425, root.height * 0.464
+        size_hint: 0.08, 0.034
+        multiline: False
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Angle set to: "
+        pos: -root.width * 0.018, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        id: confirmationAngle
+        text: "0"
+        pos: root.width * 0.0525, -root.height * 0.08
+        font_size: root.height * 0.05
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        id: errorAngle
+        pos: -root.width * 0.0, root.height * 0.04
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+
+
+<Main2_Task8>
+    name: "M2T8"
+
+    Label:
+        text: "Task 8: Align using OpenCV"
+        pos: -root.width * 0.3625, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Sets angle according to inputs from python module (OpenCV)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "OnGround"
+        on_release: root.reset()
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.arduinoCopy()
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.pythonCopy()
+
+    Label:
+        text: "     Enter the HSV values of the object that needs to be tracked. \nSlide the object horizontally on the screen to control the orientation."
+        pos: root.width * 0.05, root.height * 0.1
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "H"
+        pos: root.width * 0.02, -root.height * 0.05
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    TextInput:
+        id: h
+        hint_text: "0 - 255"
+        font_size: root.height * 0.02
+        pos: root.width * 0.5325, root.height * 0.435
+        size_hint: 0.05, 0.034
+        multiline: False
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "S"
+        pos: root.width * 0.02, -root.height * 0.1
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    TextInput:
+        id: s
+        hint_text: "0 - 255"
+        font_size: root.height * 0.02
+        pos: root.width * 0.5325, root.height * 0.385
+        size_hint: 0.05, 0.034
+        multiline: False
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "V"
+        pos: root.width * 0.02, -root.height * 0.15
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    TextInput:
+        id: v
+        hint_text: "0 - 255"
+        font_size: root.height * 0.02
+        pos: root.width * 0.5325, root.height * 0.335
+        size_hint: 0.05, 0.034
+        multiline: False
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.515, root.height * 0.18
+        size_hint: 0.08, 0.05
+        text: "Run Script"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: root.run()
+
+#-----------------------------------------------------------------
+
+<Main3_Task1>
+    name: "M3T1"
+
+    Label:
+        text: "Task 1: Basic framework for PID in 3-D"
+        pos: -root.width * 0.305, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Simple PID tuning understanding"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase2"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main3_Task2>
+    name: "M3T2"
+
+    Label:
+        text: "Task 2: Control LED over bluetooth through python"
+        pos: -root.width * 0.256, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Toggle LED through python using wireless communication (bluetooth)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "PrepPhase2"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+#-----------------------------------------------------------------
+
+<Main4_Task1>
+    name: "M4T1"
+
+    Label:
+        text: "Task 1: Hover at given altitude using ultrasonic sensor"
+        pos: -root.width * 0.226, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Hover at specified altitude using hardware (ultrasonic sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task2>
+    name: "M4T2"
+
+    Label:
+        text: "Task 2: Hover at manually adjusted altitude"
+        pos: -root.width * 0.284, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Hover at last disturbed altitude"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task3>
+    name: "M4T3"
+
+    Label:
+        text: "Task 3: Autoland using sound sensor"
+        pos: -root.width * 0.32, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Land and shutdown motors using hardware (sound sensor)"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "-No Python code-"
+        pos: -root.width * 0.358, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task4>
+    name: "M4T4"
+
+    Label:
+        text: "Task 4: Set altitude according to python input"
+        pos: -root.width * 0.27, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Hover at altitude set dynamically through python"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task5>
+    name: "M4T5"
+
+    Label:
+        text: "Task 5: Move in 2/3-D using python input"
+        pos: -root.width * 0.3, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Maneuver using python inputs"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task6>
+    name: "M4T6"
+
+    Label:
+        text: "Task 6: Move using python patterns"
+        pos: -root.width * 0.33, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Maneuver using scripted patterns in python"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task7>
+    name: "M4T7"
+
+    Label:
+        text: "Task 7: Move using OpenCV through laptop camera"
+        pos: -root.width * 0.265, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Maneuver using python module (OpenCV) through laptop camera"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+
+<Main4_Task8>
+    name: "M4T8"
+
+    Label:
+        text: "Task 8: Move using OpenCV through onboard camera"
+        pos: -root.width * 0.26, root.height * 0.435
+        font_size: root.height * 0.03
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "------------------------------------------------------------------------------------------------------------------------"
+        pos: 0, root.height * 0.38
+        font_size: root.height * 0.026
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Maneuver using python module (OpenCV) through onboard camera"
+        pos: 0, root.height * 0.32
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.925, root.height * 0.92
+        size_hint: 0.06, 0.04
+        text: "Back"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+        on_release: app.root.current = "InAir"
+
+    Label:
+        text: "Arduino code"
+        pos: -root.width * 0.38, root.height * 0.02
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.5
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+    Label:
+        text: "Python code"
+        pos: -root.width * 0.38, -root.height * 0.08
+        font_size: root.height * 0.024
+        font_name: "CourierPrime-Regular"
+
+    Button:
+        pos : root.width * 0.175, root.height * 0.4
+        size_hint: 0.05, 0.04
+        text: "Copy"
+        font_size: root.height * 0.02
+        font_name: "CourierPrime-Regular"
+
+#-----------------------------------------------------------------
