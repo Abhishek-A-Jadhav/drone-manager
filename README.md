@@ -34,7 +34,7 @@ It is divided in **four** main parts. Each part has its own number of tasks whic
 - Preparation Phase II
 - In Air Test
 
-To complete the project (i.e. to get the drone in air and have fun with it), all the **four** parts are to be completed in serial order. The tasks in these parts are designed in such a way that upon completion on one task you will get understanding of the things needed for next task (thus, in serial order).
+To complete the project (i.e. to get the drone in air and have fun with it), all the **four** parts are to be completed in serial order. The tasks in these parts are designed in such a way that upon completion of one task you will get understanding of the things needed for next task (thus, in serial order).
 
 <p align = "center">
 <br />
@@ -55,7 +55,7 @@ There are few tasks which does not require any interface. In such case only butt
 
 ---
 ### Credits:
-Library `MPU6050_tockn` - https://github.com/tockn\
-Library `New_Ping` - https://github.com/microflo\
-Library `PID_Tuning` - https://github.com/Abhishek-A-Jadhav (my own library)\
+Library `MPU6050_tockn` - https://github.com/tockn <br />
+Library `New_Ping` - https://github.com/microflo <br />
+Library `PID_Tuning` - https://github.com/Abhishek-A-Jadhav (my own library) <br />
 Font `Courier Prime` - https://fonts.google.com/specimen/Courier+Prime
