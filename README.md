@@ -12,7 +12,7 @@ Please report any other bugs on abhishekajadhavb4@gmail.com I will surely try an
 ---
 ### Usage:
 
-**Just run `main.py` through the terminal. Make sure to have `kivy` installed on your device. Created and tested on Linux. Works on Windows, Mac & Linux.**
+**Just run `drone_manager.py` located in _code_ directory through the terminal. Make sure to have `kivy` installed on your device. Created and tested on Linux. Works on Windows, Mac & Linux.**
 
 ### Requirements:
 1. Arduino
@@ -54,3 +54,8 @@ There are few tasks which does not require any interface. In such case only butt
 **In the current version of this tool, only `Preparation Phase I` and `On Ground` parts are available. I am still working on the next stages of this project. And will be updated as soon as they are ready.**
 
 ---
+### Credits:
+Library `MPU6050_tockn` - https://github.com/tockn\
+Library `New_Ping` - https://github.com/microflo\
+Library `PID_Tuning` - https://github.com/Abhishek-A-Jadhav (my own library)\
+Font `Courier Prime` - https://fonts.google.com/specimen/Courier+Prime
