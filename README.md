@@ -5,7 +5,7 @@ This is version 1.0 of Drone Manager. This is a project I am working on to creat
 
 It is an interfacing tool which calls a bunch of functions to interact with the drone. Requires an arduino to work.
 
-**Known bugs:** Not able to set the port directly (User has to set it manually inside the `main.py` file).
+**Known bugs:** Not able to set the port directly (User has to set it manually inside the `drone_manager.py` file).
 
 Please report any other bugs on abhishekajadhavb4@gmail.com I will surely try and fix them in next version.
 
