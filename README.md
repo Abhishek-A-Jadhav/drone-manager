@@ -44,7 +44,7 @@ To complete the project (i.e. to get the drone in air and have fun with it), all
 <br />
 <br />
 
-<img src = "code/Window2.png" width = "500">
+<img src = "code/ignoreThisFile.png" width = "500">
 </p>
 <br />
 
